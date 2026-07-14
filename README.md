@@ -1,2 +1,2 @@
-# foxxxonline.github.com
+# foxxxonline.github.io
 making a fan site
