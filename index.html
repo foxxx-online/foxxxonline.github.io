@@ -1,39 +1,96 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>foxxx-online</title>
-  <style>
-    body { font-family: system-ui, -apple-system, Roboto, "Segoe UI", Arial; max-width: 800px; margin: 3rem auto; padding: 0 1rem; line-height: 1.5; }
-    header { margin-bottom: 1.5rem }
-    nav a { margin-right: 1rem }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Welcome to foxxx-online</h1>
-    <p>If you landed here because GitHub Pages showed the README, that's because there was no <code>index.html</code> at the repository root. I've added this simple homepage so your site will show it instead of the README.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foxxx Studio</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Rock+Salt&family=Walter+Turncoat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h1>Foxxx Haus Studio</h1>
+    </div>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="blog.html">Blog</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="shop.html">Shop</a>
-    <a href="wishes.html">Wishes</a>
-    <a href="privacy.html">Privacy</a>
-  </nav>
+    <div class="layout-container">
+      <aside class="left-sidebar">
+        <h2>Anon Wall</h2>
+        <div class="comment-feed">
+          <div id="comment-scroll" class="comment-scroll">
+            <p class="comment-empty">Loading comments...</p>
+          </div>
+        </div>
+      </aside>
 
-  <main>
-    <p>Pick a page above to continue. If you want the site to redirect automatically to a specific page (for example <code>gallery.html</code>), tell me which page and I can update this file to redirect there.</p>
-    <p>Or, if you'd prefer a different homepage design, paste the HTML/CSS you'd like and I can update it.</p>
-  </main>
+      <main class="main-content">
+        <p>
+          This is the start of our little hub. You'll find exclusive content,
+          updates, and a more personal look into our life when we're not live.
+        </p>
+        <h2>Haus Renovation Plans:</h2>
+        <ul>
+          <li>
+            <strong>Front of Haus:</strong> Where most of the interaction takes
+            place, including a live feed of anonymous comments from site
+            visitors
+          </li>
+          <li>
+            <strong>Blog/vlog page, "Thotty Thoughts":</strong> Follow our
+            journey as newbies in the industry
+          </li>
+          <li>
+            <strong>Gallery page:</strong> Creative projects (art & tech),
+            photography, a look behind the scenes, and exclusive content
+          </li>
+          <li>
+            <strong>Wishes:</strong> A gifting page with all my wishlists &
+            boards
+          </li>
+          <li>
+            <strong>Listings:</strong> See what's for sale on different
+            platforms all in one place
+          </li>
+          <li>
+            <strong>Contact:</strong> Get in touch with us directly or leave an
+            anonymous comment for the front page
+          </li>
+        </ul>
+      </main>
 
-  <!-- Optional automatic redirect: uncomment the following lines and change the destination
-  <script>
-    // window.location.href = 'gallery.html';
-  </script>
-  -->
-</body>
+      <aside class="sidebar">
+        <h2>About Foxxx Haus</h2>
+        <hr />
+        <p>
+          Show your love and support: Visit the Ko-Fi page to find side projects
+          and progress updates. Show your love and support - leave a comment,
+          like, or leave a donation to support our comeup.
+        </p>
+        <script
+          type="text/javascript"
+          src="https://storage.ko-fi.com/cdn/widget/Widget_2.js"
+        ></script>
+        <script type="text/javascript">
+          kofiwidget2.init(
+            "Support the come up on Ko-fi",
+            "#f7056a",
+            "X8X71WPSTX",
+          );
+          kofiwidget2.draw();
+        </script>
+      </aside>
+    </div>
+    <script src="scripts/navbar.js"></script>
+    <script type="module" src="scripts/comments.js"></script>
+    <!-- Elfsight Age Verification | Untitled Age Verification -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div
+      class="elfsight-app-e7145d0d-9410-40b4-8f00-c5c5112fb44f"
+      data-elfsight-app-lazy
+    ></div>
+  </body>
 </html>
